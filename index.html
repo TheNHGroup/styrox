@@ -69,12 +69,12 @@
 </style>
 <script>
     $(()=>{
-        setTimeout(()=>{
         $('#vis').attr('src', 'lib/bg.mp4');
         $("#vis")[0].load();
-        $("#vis")[0].play();
+        setTimeout(()=>{
+            $("#vis")[0].play();
         $('#vis').show('fade', 700)
-        }, 1000)
+        }, 500)
         
     })
 </script>
