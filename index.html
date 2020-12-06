@@ -2,6 +2,15 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QLPTWGKE7E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-QLPTWGKE7E');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STYROX</title>
@@ -20,9 +29,10 @@
 <script src="lib/js/jquery-ui.min.js"></script>
 
 <style>
-    *{
+    * {
         user-select: none;
     }
+
     .back {
         position: absolute;
         top: 0;
@@ -71,23 +81,15 @@
     }
 </style>
 <script>
-    $(()=>{
+    $(() => {
         $('#vis').attr('src', 'lib/bg.mp4');
         $("#vis")[0].load();
-        setTimeout(()=>{
+        setTimeout(() => {
             $("#vis")[0].play();
-        $('#vis').show('fade', 700)
+            $('#vis').show('fade', 700)
         }, 500)
-        
+
     })
 </script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QLPTWGKE7E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-QLPTWGKE7E');
-</script>
 </html>
