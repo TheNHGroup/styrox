@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STYROX</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="text-gray-700 body-font">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+            <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero"
+                src="https://dummyimage.com/720x600">
+            <div class="text-center lg:w-2/3 w-full">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Parece que lo que buscas ya no está disponible.</h1>
+                <p class="mb-8 leading-relaxed">Parece que la página a la que deseas acceder no se encuentra disponible en nuestro sistema o no tienes los permisos necesarios para acceder al contenido.</p>
+                <div class="flex justify-center">
+                    <button
+                        class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" onclick="window.location.replace('index.html')">Inicio</button>
+                    <button
+                        class="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg" onclick="window.location.replace('contacto.html')">Contacto</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <style>
+        a{
+            cursor: pointer;
+        }
+    </style>
+</body>
+
+
+</html>
