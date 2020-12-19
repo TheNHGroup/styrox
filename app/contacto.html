@@ -120,7 +120,7 @@
                 To: $('#emailto').val(),
                 From: $('#email').val(),
                 Subject: "test de gmail smtp",
-                Body: $('#message').html(),
+                Body: $('#message').val(),
             }).then(
                 message => console.log("mail sent successfully", message)
             );
